@@ -1,0 +1,8 @@
+{
+  "console_show": "1",
+  "btgw_port": "1819",
+  "verify_interval": 360000,
+  "monitor": "http://jk.blueye.info/MonitorHttp",
+  "sendlog": "0",
+  "check_reqid": "1"
+}

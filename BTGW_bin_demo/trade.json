@@ -1,0 +1,371 @@
+{
+  "okex": {
+    "user_info_spot": {
+      "request": {
+        "$api_key": "api_key",
+        "$secret_key": "secret_key",
+        "$sign": "sign"
+      },
+      "response": {
+        "$result": "result",
+        "$array_1_name": "free",
+        "$array_1_get": "full_copy",
+        "$array_2_name": "freezed",
+        "$array_2_get": "full_copy"
+      }
+    },
+    "order_spot": {
+      "request": {
+        "$api_key": "api_key",
+        "$secret_key": "secret_key",
+        "$sign": "sign",
+        "$symbol": "symbol",
+        "$price": "price",
+        "$amount": "amount",
+        "$buy_sell": "",
+        "$order_type": "type"
+      },
+      "response": {
+        "$result": "result",
+        "$order_id": "order_id",
+        "$error_code": "error_code",
+        "$error_message": ""
+      }
+    },
+    "cancel_spot": {
+      "request": {
+        "$api_key": "api_key",
+        "$secret_key": "secret_key",
+        "$sign": "sign",
+        "$symbol": "symbol",
+        "$order_id": "order_id"
+      },
+      "response": {
+        "$result": "result",
+        "$cancel_id": "order_id",
+        "$error_code": "error_code",
+        "$error_message": ""
+      }
+    },
+    "order_info_spot": {
+      "request": {
+        "$api_key": "api_key",
+        "$secret_key": "secret_key",
+        "$sign": "sign",
+        "$symbol": "symbol",
+        "$order_id": "order_id"
+      },
+      "response": {
+        "$result": "result",
+        "$array_name": "orders",
+        "$array_get": "pick_copy",
+        "$amount": "",
+        "$contract_name": "",
+        "$create_date": "create_date",
+        "$deal_amount": "deal_amount",
+        "$fee": "fee",
+        "$order_id": "order_id",
+        "$price": "price",
+        "$price_avg": "avg_price",
+        "$status": "status",
+        "$symbol": "symbol",
+        "$type": "type",
+        "$unit_amount": "",
+        "$lever_rate": "",
+        "$error_code": "error_code",
+        "$error_message": ""
+      }
+    },
+    "user_info_future": {
+      "request": {
+        "$api_key": "api_key",
+        "$secret_key": "secret_key",
+        "$sign": "sign"
+      },
+      "response": {
+        "$result": "result",
+        "$array_name": "info",
+        "$array_get": "pick_copy",
+        "$symbol": "symbol",
+        "$account_rights": "account_rights",
+        "$error_code": "error_code",
+        "$error_message": ""
+      }
+    },
+    "order_future": {
+      "request": {
+        "$api_key": "api_key",
+        "$secret_key": "secret_key",
+        "$sign": "sign",
+        "$symbol": "symbol",
+        "$contract_type": "contract_type",
+        "$price": "price",
+        "$amount": "amount",
+        "$buy_sell": "",
+        "$order_type": "type",
+        "$open_close": "",
+        "$match_price": "match_price",
+        "$leverage": "lever_rate"
+      },
+      "response": {
+        "$result": "result",
+        "$order_id": "order_id",
+        "$error_code": "error_code",
+        "$error_message": ""
+      }
+    },
+    "cancel_future": {
+      "request": {
+        "$api_key": "api_key",
+        "$secret_key": "secret_key",
+        "$sign": "sign",
+        "$symbol": "symbol",
+        "$contract_type": "contract_type",
+        "$order_id": "order_id"
+      },
+      "response": {
+        "$result": "result",
+        "$cancel_id": "order_id",
+        "$error_code": "error_code",
+        "$error_message": ""
+      }
+    },
+    "order_info_future": {
+      "request": {
+        "$api_key": "api_key",
+        "$secret_key": "secret_key",
+        "$sign": "sign",
+        "$symbol": "symbol",
+        "$contract_type": "contract_type",
+        "$status": "status",
+        "$order_id": "order_id",
+        "$current_page": "current_page",
+        "$page_length": "page_length"
+      },
+      "response": {
+        "$result": "result",
+        "$array_name": "orders",
+        "$array_get": "pick_copy",
+        "$amount": "amount",
+        "$contract_name": "contract_name",
+        "$create_date": "create_date",
+        "$deal_amount": "deal_amount",
+        "$fee": "fee",
+        "$order_id": "order_id",
+        "$price": "price",
+        "$price_avg": "price_avg",
+        "$status": "status",
+        "$symbol": "symbol",
+        "$type": "type",
+        "$unit_amount": "unit_amount",
+        "$lever_rate": "lever_rate",
+        "$error_code": "error_code",
+        "$error_message": ""
+      }
+    }
+  },
+  "huobi":
+		{
+      "user_info_spot": {
+        "request": {
+          "$api_key": "api_key",
+          "$secret_key": "secret_key",
+          "$sign": "Signature"
+        },
+        "response": {
+          "$result": "status",
+          "$array_1_name": "free",
+          "$array_1_get": "full_copy",
+          "$array_2_name": "freezed",
+          "$array_2_get": "full_copy",
+          "$error_code": "err-code",
+          "$error_message": "err-msg"
+        }
+      },
+      "init": 
+      {
+        "request": {
+          "$api_key": "api_key",
+					"$secret_key":"",
+					"$sign":"Signature"
+				},
+        "response": {
+          "$result": "status",
+          "$account_id": "id",
+          "$error_code": "err-code",
+          "$error_message": "err-msg"
+        }
+      },
+			"order_spot":
+			{
+				"request":
+				{
+					"$api_key":"api_key",
+					"$secret_key":"",
+					"$sign":"Signature", 
+					"$symbol":"symbol", 
+					"$price":"price",
+					"$amount":"amount",
+					"$buy_sell":"",
+					"$order_type":"type"
+				},
+				"response":
+				{
+					"$result":"status",
+					"$order_id":"order_id",
+          "$error_code": "err-code",
+          "$error_message": "err-msg"
+				}
+			},
+			"cancel_spot":
+			{
+				"request":
+				{
+					"$api_key":"api_key", 
+					"$secret_key":"secret_key",
+					"$sign":"sign", 
+					"$symbol":"symbol", 
+					"$order_id":"order_id"
+				},
+				"response":
+				{
+					"$result":"status",
+					"$cancel_id":"data",
+          "$error_code": "err-code",
+          "$error_message": "err-msg"
+				}
+			},
+			"order_info_spot":
+			{
+				"request":
+				{
+					"$api_key":"api_key", 
+					"$secret_key":"secret_key",
+					"$sign":"sign", 
+					"$symbol":"symbol", 
+					"$order_id":"order_id"
+				},
+				"response":
+				{
+					"$result":"status",
+					"$array_name":"data",
+          "$account-id": "user-id",
+          "$amount":"amount",
+					"$contract_name":"",
+					"$create_date":"created-at",
+					"$deal_amount":"field-amount",
+					"$fee":"field-fees",
+					"$order_id":"id",
+					"$price":"price",
+					"$price_avg":"price",
+					"$status":"state",
+					"$symbol":"symbol",
+					"$type":"type",
+					"$unit_amount":"",
+					"$lever_rate":"",
+          "$error_code": "err-code",
+          "$error_message": "err-msg"
+            	}
+			},
+			"user_info_future":
+			{
+				"request":
+				{
+					"$api_key":"api_key", 
+					"$secret_key":"secret_key",
+					"$sign":"sign"
+				},
+				"response":
+				{
+					"$result":"status",
+					"$array_name":"info",
+					"$array_get":"pick_copy",
+					"$symbol":"symbol",
+					"$account_rights":"account_rights",
+          "$error_code": "err-code",
+          "$error_message": "err-msg"
+				}
+			},
+			"order_future":
+			{
+				"request":
+				{
+					"$api_key":"api_key", 
+					"$secret_key":"secret_key",
+					"$sign":"sign", 
+					"$symbol":"symbol", 
+					"$contract_type":"contract_type", 
+					"$price":"price",
+					"$amount":"amount",
+					"$buy_sell":"",
+					"$order_type":"type", 
+					"$open_close":"", 
+					"$match_price":"match_price", 
+					"$leverage":"lever_rate"
+				},
+				"response":
+				{
+					"$result":"status",
+					"$order_id":"order_id",
+          "$error_code": "err-code",
+          "$error_message": "err-msg"
+				}
+			},
+			"cancel_future":
+			{
+				"request":
+				{
+					"$api_key":"api_key", 
+					"$secret_key":"secret_key",
+					"$sign":"sign", 
+					"$symbol":"symbol", 
+					"$contract_type":"contract_type",
+					"$order_id":"order_id"
+				},
+				"response":
+				{
+					"$result":"status",
+					"$cancel_id":"cancel_id",
+          "$error_code": "err-code",
+          "$error_message": "err-msg"
+				}
+			},
+			"order_info_future":
+			{
+				"request":
+				{
+					"$api_key":"api_key", 
+					"$secret_key":"secret_key",
+					"$sign":"sign", 
+					"$symbol":"symbol", 
+					"$contract_type":"contract_type",
+					"$status":"status",
+					"$order_id":"order_id",
+					"$current_page":"current_page",
+					"$page_length":"page_length"
+				},
+				"response":
+				{
+					"$result":"status",
+					"$array_name":"orders",
+					"$array_get":"pick_copy",
+					"$amount":"amount",
+					"$contract_name":"contract_name",
+					"$create_date":"create_date",
+					"$deal_amount":"deal_amount",
+					"$fee":"fee",
+					"$order_id":"order_id",
+					"$price":"price",
+					"$price_avg":"price_avg",
+					"$status":"status",
+					"$symbol":"symbol",
+					"$type":"type",
+					"$unit_amount":"unit_amount",
+					"$lever_rate":"lever_rate",
+          "$error_code": "err-code",
+          "$error_message": "err-msg"
+				}
+			}
+		}
+}
+

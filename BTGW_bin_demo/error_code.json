@@ -1,0 +1,17 @@
+{
+  "0": "no error",
+  "1000": "input request invalid",
+  "1001": "unknown exchange name",
+  "1002": "input convert error",
+  "1003": "request symbol invalid",
+  "1004": "request amount invalid",
+  "1005": "request price invalid",
+  "1006": "request buysell invalid",
+  "1007": "request api key is empty",
+  "1008": "market price is not supported",
+  "1009": "multi order info is not supported",
+  "1010": "symbol_type not supported",
+  "1011": "message type not supported",
+  "1012": "market price not supported",
+  "1013": "margin type not supported"
+}
