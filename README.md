@@ -2,7 +2,7 @@
 #### BTGW数字货币交易网关服务器运行包（Demo）
 
 　BTGW_demo是蓝目数字货币交易网关服务器运行包Demo，用于演示蓝目交易网关，以统一化的交易数据格式，执行各个交易所的委托下单、委托撤单、交易记录查询等API接口，为数字货币交易者屏蔽各个交易所API的巨大差异，让交易者们更专注于策略和执行。<br>
-  目前支持的数字资产交易所包括：bitfinex, kraken, bitstamp, bittrex, okex, huobi, binance, bitmex,zb, poloniex, bithumb. 提供详细的API访问接口文档，以及针对python, C++ 和java 的客户端访问源码。由于BTGW_demo是demo版，只支持okex的交易，如需连接其他交易所，请联系blueye_info@163.com或登录[官网](https://www.blueye.info) 咨询<br>
+  目前支持的数字资产交易所包括：bitfinex, kraken, bitstamp, bittrex, okex, huobi, binance, bitmex,zb, poloniex, bithumb. 提供详细的API访问接口文档，以及针对python, C++ 和java 的客户端访问源码。由于BTGW_demo是demo版，只支持okex的交易，如需连接其他交易所，请联系blueye_info@163.com或登录 [官网](https://www.blueye.info) 咨询<br>
 　蓝目数据提供了全球各大主流数字资产交易所的全部品种的实时交易行情和各类历史数据，供专业的投资机构和个人宽客使用。数据包含了实时数据ticker, 深度数据depth, 各周期历史kline，并且提供了各个交易所的委托下单、委托撤单、交易信息查询等接口。<br>
 　<br>
 　[官方网站](https://www.blueye.info)
