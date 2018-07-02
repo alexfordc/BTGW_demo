@@ -22,7 +22,7 @@
 　windows 操作系统。<br>
 
 #### 下载安装
-1. 下载安装BTGW_demo。下载TEmu_demo客户端。
+1. 下载安装BTGW_demo。下载TEmu_demo客户端。 [链接](https://github.com/blueye-info/TEmu)
 
 2. 在acc_key.json配置文件设置好自己的okex交易所API Key和Secret Key。
 
